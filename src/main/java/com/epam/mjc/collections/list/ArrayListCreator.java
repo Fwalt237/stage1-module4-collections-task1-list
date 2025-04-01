@@ -9,6 +9,7 @@ public class ArrayListCreator {
         for(int i = 0; i < sourceList.size(); i++) {
             if((i+1)%3==0) {
                 newList.add(sourceList.get(i));
+                newList.add(sourceList.get(i));
             }
         }
         return newList;
