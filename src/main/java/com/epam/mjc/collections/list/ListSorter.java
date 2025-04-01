@@ -17,6 +17,9 @@ class ListComparator implements Comparator<String> {
         try{
             int first = Integer.parseInt(a);
             int second = Integer.parseInt(b);
+            if(Math.abs(first) == Math.abs(second)){
+                return first-second;
+            }
             return ((first*5)*(first*5) +3) - ((second*5)*(second*5) +3);
         } catch (NumberFormatException e){
             return 0;
